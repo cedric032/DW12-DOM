@@ -125,17 +125,14 @@ sec1.style.backgroundColor = "dodgerblue";
 navElement.style.position = "absolute";
 navElement.style.top = "3rem";
 navElement.style.right = "3rem";
-
-for (const key in liInNavElements) {
-  if (Object.hasOwnProperty.call(liInNavElements, key)) {
-    liInNavElements[key].style.fontSize = "36px";
-  }
+for (const li of liInNavElements) {
+  li.style.fontSize = "36px";
 }
 
-for (const key in pInLastSectionElements) {
-  pInLastSectionElements[key].style.backgroundColor = "burlywooed";
-  pInLastSectionElements[key].style.fontStyle = "italic";
+for (const p of pInLastSectionElements) {
+  p.style.backgroundColor = "burlywooed";
+  p.style.fontStyle = "italic";
 }
 
-footerUlElement.style.display = "flex";
 footerUlElement.style.listStyle = "none";
+footerUlElement.style.display = "flex";

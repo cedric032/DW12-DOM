@@ -127,7 +127,9 @@ navElement.style.top = "3rem";
 navElement.style.right = "3rem";
 
 for (const key in liInNavElements) {
-  liInNavElements[key].style.fontSize = "36px";
+  if (Object.hasOwnProperty.call(liInNavElements, key)) {
+    liInNavElements[key].style.fontSize = "36px";
+  }
 }
 
 for (const key in pInLastSectionElements) {
